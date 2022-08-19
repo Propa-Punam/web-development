@@ -7,12 +7,60 @@ body{
     background-color: coral;
 
     color: black;
+    counter-reset: section;
 }
 p{
     color: brown;
+}
+p.counter_class::before{
+    counter-increment: section;
+    content: " ❤️ crush " counter(section)":";
 }
 .special{
     border: 5px solid red;
     background-color: beige;
     margin: 10px 0px;
+}
+p.special{
+    color: goldenrod;
+    margin: 5px;
+    padding: 5px;
+}
+p.special:hover{
+    color: indianred;
+    font-size: 30px;
+    background-color: lawngreen;
+    font-weight: bolder;
+}
+input{
+    margin: 10px;
+}
+input:focus{
+    color: green;
+    font-size: 30px;
+    background-color: aqua;
+    font-weight: 700px;
+    text-align: right;
+    
+}
+li:nth-child(3n){
+    color: red;
+    background-color: greenyellow;
+    width: fit-content;
+    font-size: 40px;
+}
+a:visited{
+    color: red;
+    font-size: large;
+    
+}
+h2::before{
+content: " hello ";
+color: blueviolet;
+background-color: cornflowerblue;
+}
+.special::after{
+    content: " bye ";
+    color: red;
+
 }
