@@ -3,7 +3,13 @@ h1{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 body{
+<<<<<<< HEAD
     background-color: coral;
+=======
+
+    background-color: coral;
+
+>>>>>>> f4a53e331cd42ba54a36372b3e0eca5abdf3ddb1
     color: black;
 }
 p{
